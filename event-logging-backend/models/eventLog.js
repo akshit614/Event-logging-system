@@ -5,8 +5,8 @@ const eventLogSchema = new mongoose.Schema({
   timestamp: { type: Date, required: true, default: Date.now },
   sourceAppId: { type: String, required: true },
   dataPayload: { type: Object, required: true },
-  hash: { type: String, required: true }, // Current log's hash
-  prevHash: { type: String, required: true }, // Previous log's hash
+  hash: { type: String, required: true }, 
+  prevHash: { type: String, required: true }, 
 });
 
 eventLogSchema.index({ timestamp: 1 });
