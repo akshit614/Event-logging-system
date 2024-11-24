@@ -5,7 +5,10 @@ const { generateHash } = require('../services/hashServices');
 const inputSchema = z.object({
   eventType : z.string().min(1, "String cannot be empty"),
   sourceAppId : z.string().min(1, "String cannot be empty"),
-  dataPayload : z.object()
+  dataPayload : z.object({
+    username: z.string().min(1, "String cannot be empty"),
+    status : z.string().min(1, "String cannot be empty")
+  })
 })
 
 exports.createLog = async (req, res) => {
