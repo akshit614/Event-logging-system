@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'https://event-logging.onrender.com/api/'; 
+const BASE_URL = 'https://event-logging.onrender.com/api'; 
 
 export const fetchLogs = async () => {
   try {
