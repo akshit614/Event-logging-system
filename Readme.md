@@ -7,6 +7,7 @@
 -  MongoDb database for scalable and stable database.
 -  Dashboard with table view of logs with previous and current hashes.
 -  Zod validations for input schemas.
+- filter based on query params
 
 # Tech stack
 ## Backend
@@ -33,3 +34,4 @@
 
 2. **Get** `api/logs`
     - To get all the logs of the system
+    - Also filtering logs as required based on query parameters 
